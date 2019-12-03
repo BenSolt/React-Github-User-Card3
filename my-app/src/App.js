@@ -3,6 +3,9 @@ import axios from 'axios';
 import './App.css';
 import UserCard from './component/UserCard';
 
+
+// const [query, setQuery] = useState("");
+
 class App extends React.Component {
   constructor(){
     super()
@@ -12,11 +15,15 @@ class App extends React.Component {
     };
   }
 
+  
+
   componentDidMount(){
     console.log('component did mount')
     axios
     .get('https://api.github.com/users/BenSolt')
-    .then (res => {this.setState({
+    .then (res => {
+      console.log(res.data)
+      this.setState({
       user1: res.data
     })
   })
@@ -24,11 +31,23 @@ class App extends React.Component {
   axios
     .get('https://api.github.com/users/BenSolt/followers')
     .then (res => {this.setState({
-     followers1: res.data
+      followers1: res.data
       })
     })
 
   }
+
+// componentDidUpdate(){
+//   axios
+//   .get('https://api.github.com/users/BenSolt/followers')
+//   .then (res => {this.setState({
+//     followers1: res.data.filter(p =>
+//     p.Id.toLowerCase().includes(query.toLowerCase())
+//   )
+//  setState(followers1);
+//     })
+//   })
+// }
 
   render(){
   return (
