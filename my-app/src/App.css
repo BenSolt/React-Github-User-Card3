@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.cardholder{
+  display: flex;
+  padding: 5px;
+ }
+ 
+ .card1{
+   width: 320px;
+   height: 450px;
+   background: lightgray;
+   margin: 10px;
+   border-radius: 5px;
+   border: 2px solid black;
+ }
+ .img1{
+   width: 256px;
+   height: auto;
+   border-radius: 5px;
+ }
+ 
+ 
+ .followers{
+   display: flex;
+   flex-wrap: wrap;
+   width: 600px;
+   /* border: 2px solid black; */
+ }
+
+ .card2{
+  width: 180px;
+  height: 250px;
+  background: lightgray;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.img2{
+  width: 136px;
+  height: auto;
+  border-radius: 5px;
+}
