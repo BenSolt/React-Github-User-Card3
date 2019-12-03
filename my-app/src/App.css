@@ -28,3 +28,18 @@
    width: 600px;
    /* border: 2px solid black; */
  }
+
+ .card2{
+  width: 180px;
+  height: 250px;
+  background: lightgray;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.img2{
+  width: 136px;
+  height: auto;
+  border-radius: 5px;
+}
