@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
+import UserCard from './component/UserCard';
 
 class App extends React.Component {
   constructor(){
@@ -40,5 +41,5 @@ class App extends React.Component {
   );
   }
 }
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
 export default App;
